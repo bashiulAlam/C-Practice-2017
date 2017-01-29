@@ -16,7 +16,7 @@ namespace BFS
             numOfVertex = V;
         }
 
-        public void BFSTraversal(Dictionary<int, int> list, int startNode)
+        public void BFSTraversal(Boolean[ , ] list, int startNode)
         {
             Boolean[] isVisited = new Boolean[numOfVertex];
             for (int i = 0; i < numOfVertex; i++)
@@ -31,12 +31,13 @@ namespace BFS
             {
                 int current = queue.Dequeue();
                 Console.Write(current + " ");
+                int next;
 
-                foreach (var pair in list)
+                for (int i = 0; i < numOfVertex; i++)
                 {
-                    if (pair.Key == current)
+                    if (list[current, i])
                     {
-                        int next = pair.Value;
+                        next = i;
                         if (!isVisited[next])
                         {
                             isVisited[next] = true;

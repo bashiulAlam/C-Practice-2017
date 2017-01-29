@@ -10,7 +10,8 @@ namespace BFS
     {
         static void Main(string[] args)
         {
-            Dictionary<int, int> list = new Dictionary<int, int>();
+            //Dictionary<int, int> list = new Dictionary<int, int>();
+            Boolean [ , ] list = new Boolean[4, 4];
             int numOfVertex;
             int numOfEdge;
 
@@ -27,7 +28,7 @@ namespace BFS
             g.addEdge(list, 2, 3);
             g.addEdge(list, 3, 3);
 
-            bfs.BFSTraversal(list, 2);
+            bfs.BFSTraversal(list, 3);
             Console.WriteLine();
             Console.ReadKey();
         }

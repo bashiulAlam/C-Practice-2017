@@ -11,9 +11,9 @@ namespace BFS
         private int numOfVertex;
         private int numOfEdge;
 
-        public void addEdge(Dictionary<int, int> list, int m, int n)
+        public void addEdge(Boolean[ , ] list, int m, int n)
         {
-            list.Add(m, n);
+            list[m, n] = true;
         }
 
         public void printEdge(Dictionary<int, int> list)

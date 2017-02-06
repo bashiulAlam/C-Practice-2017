@@ -1,0 +1,2 @@
+E:\Visual Studio Projects\C-Practice-2017\BinaryTree\BinaryTree\bin\Debug\BinaryTree.exe.config
+E:\Visual Studio Projects\C-Practice-2017\BinaryTree\BinaryTree\obj\Debug\BinaryTree.csprojResolveAssemblyReference.cache
